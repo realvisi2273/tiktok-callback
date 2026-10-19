@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TikTok Auth Bridge</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+  <h2>Đang xác thực và chuyển tiếp về ứng dụng...</h2>
+  <p>Vui lòng đợi trong giây lát.</p>
+  <script>
+    // Tự động chuyển query params (code, state) về cổng 18899 trên máy bạn
+    window.location.href = "http://localhost:18899/callback" + window.location.search;
+  </script>
+</body>
+</html>
